@@ -113,8 +113,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #333333;
-            backdrop-filter: blur(10px);
+/*             background: #333333;
+            backdrop-filter: blur(10px); */
+
+                background-image: -webkit-repeating-linear-gradient(135deg, transparent, #101010 25%, #737373 25%, transparent 50%, transparent 50%), -webkit-repeating-radial-gradient(#616161, #222222);
+    background-image: repeating-linear-gradient(-45deg, transparent, #101010 25%, #737373 25%, transparent 50%, transparent 50%);
+    background-size: 6px 6px;
+    background-color: #444;
         }
 
         h1 {
