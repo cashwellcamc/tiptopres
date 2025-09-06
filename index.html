@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Top Res Digital Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .mountain-section {
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .mountain {
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 400px solid #2c3e50;
+            position: relative;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+            transform: translateY(150px);
+        }
+
+        .mountain::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -200px;
+            width: 0;
+            height: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 320px solid #34495e;
+            z-index: -1;
+            transform: translateY(30px);
+        }
+
+        .content-section {
+            width: 50%;
+            height: 100vh;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .services-list {
+            list-style: none;
+            margin: 2rem 0 3rem 0;
+        }
+
+        .services-list li {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .services-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 1.8rem;
+            top: -0.3rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .email {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .email:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            
+            .mountain-section,
+            .content-section {
+                width: 100%;
+                height: 50vh;
+            }
+            
+            .mountain {
+                border-left-width: 150px;
+                border-right-width: 150px;
+                border-bottom-width: 250px;
+                transform: translateY(100px);
+            }
+            
+            .mountain::before {
+                left: -120px;
+                border-left-width: 120px;
+                border-right-width: 120px;
+                border-bottom-width: 200px;
+                transform: translateY(20px);
+            }
+            
+            .content-section {
+                padding: 40px 30px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .services-list li {
+                font-size: 1.1rem;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .mountain {
+                border-left-width: 100px;
+                border-right-width: 100px;
+                border-bottom-width: 180px;
+                transform: translateY(80px);
+            }
+            
+            .mountain::before {
+                left: -80px;
+                border-left-width: 80px;
+                border-right-width: 80px;
+                border-bottom-width: 140px;
+                transform: translateY(15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="mountain-section">
+        <div class="mountain"></div>
+    </section>
+    
+    <section class="content-section">
+        <h1>Tip Top Res Digital Agency</h1>
+        
+        <ul class="services-list">
+            <li>Website Development</li>
+            <li>Web Applications</li>
+            <li>Web Design</li>
+            <li>Branding</li>
+            <li>Analytics</li>
+            <li>Content Management Systems</li>
+            <li>Internal Tools</li>
+            <li>Marketing</li>
+            <li>and more</li>
+        </ul>
+        
+        <h3>Get in Touch</h3>
+        <p class="contact-info">
+            Ready to elevate your digital presence? Let's discuss your project and bring your vision to life.<br>
+            <a href="mailto:helloitscamc@gmail.com" class="email">helloitscamc@gmail.com</a>
+        </p>
+    </section>
+</body>
+</html>
