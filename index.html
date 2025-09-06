@@ -201,6 +201,10 @@
                 border-bottom-width: 250px;
                 transform: translateY(100px);
             }
+
+            .mountain-section { 
+                display: none;
+            }
             
             .mountain::before {
                 left: -120px;
@@ -212,7 +216,8 @@
             
             .content-section {
                 padding: 40px 30px;
-                display:none;
+/*                 display:none;
+            } */
             }
             
             h1 {
@@ -227,9 +232,9 @@
             h3 {
                 font-size: 1.5rem;
             }
-            svg { display: block !important; } 
+/*             svg { display: block !important; } 
+        } */
         }
-
         @media (max-width: 480px) {
             h1 {
                 font-size: 2rem;
@@ -241,11 +246,15 @@
                 border-bottom-width: 180px;
                 transform: translateY(80px);
             }
+            
+            .mountain-section { 
+                display: none;
+            }
 
-            .content-section { 
+/*             .content-section { 
                 display:none;
             }
-            
+             */
             .mountain::before {
                 left: -80px;
                 border-left-width: 80px;
@@ -253,8 +262,8 @@
                 border-bottom-width: 140px;
                 transform: translateY(15px);
             }
-            svg { display: block !important; } 
-        }
+/*             svg { display: block !important; } 
+        } */
     </style>
 </head>
 <body>
